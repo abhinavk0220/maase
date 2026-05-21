@@ -62,7 +62,7 @@ export default function ComicStrip() {
               {/* Avatar Box */}
               <div className="shrink-0 w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-[#2A1710] shadow-sm">
                 <img
-                  src={msg.from === 'user' ? "/BETA.png" : "/MAA.png"}
+                  src={msg.from === 'user' ? `${import.meta.env.BASE_URL}BETA.png` : `${import.meta.env.BASE_URL}MAA.png`}
                   alt={msg.from === 'user' ? "Young migrant" : "Maa"}
                   className="w-full h-full object-cover"
                 />
