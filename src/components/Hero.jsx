@@ -31,7 +31,7 @@ export default function Hero() {
 
       {/* actual logo */}
       <img
-        src="/logo.jpeg"
+        src={`${import.meta.env.BASE_URL}logo.jpeg`}
         alt="Maa Se"
         className="w-52 h-auto mb-4 object-contain"
         style={{ filter: 'drop-shadow(0 4px 16px rgba(139,26,26,0.12))' }}

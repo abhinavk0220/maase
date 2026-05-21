@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-[#D4820A]/10 rounded-full blur-[60px] pointer-events-none" />
 
       <div className="relative z-10">
-        <img src="/logo.jpeg" alt="Maa Se" className="w-28 h-auto mx-auto mb-3 object-contain opacity-90 rounded-[4px]" />
+        <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Maa Se" className="w-28 h-auto mx-auto mb-3 object-contain opacity-90 rounded-[4px]" />
         <p className="font-playfair italic text-amber-light text-[13px] mb-4">Har Din Ghar Jaisa</p>
         <p className="text-[12px] leading-[2] mb-4">
           {areas.join(' · ')}
