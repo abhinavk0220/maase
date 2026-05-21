@@ -61,16 +61,18 @@ export default function Hero() {
       </div>
 
       {/* areas marquee strip */}
-      <div className="absolute bottom-0 left-0 right-0 bg-crimson flex items-center gap-3 px-4 py-2.5 overflow-hidden">
-        <span className="text-[10px] font-extrabold tracking-[2px] uppercase text-amber-light whitespace-nowrap shrink-0">
+      <div className="absolute bottom-0 left-0 right-0 bg-crimson flex items-center px-4 py-2.5 overflow-hidden">
+        <span className="text-[10px] font-extrabold tracking-[2px] uppercase text-amber-light whitespace-nowrap shrink-0 relative z-10 pr-3 bg-crimson">
           Delivering to
         </span>
-        <div className="flex gap-5 animate-marquee shrink-0">
-          {doubled.map((area, i) => (
-            <span key={i} className="text-[12px] text-cream/80 font-semibold whitespace-nowrap">
-              📍 {area}
-            </span>
-          ))}
+        <div className="flex-1 overflow-hidden relative [mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]">
+          <div className="flex gap-5 animate-marquee w-max pl-2">
+            {doubled.map((area, i) => (
+              <span key={i} className="text-[12px] text-cream/80 font-semibold whitespace-nowrap">
+                📍 {area}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
